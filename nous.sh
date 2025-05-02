@@ -53,7 +53,7 @@ curl -s https://raw.githubusercontent.com/sk1fas/logo-sk1fas/main/logo-sk1fas.sh
             cd
             
             # --- 4. Скачивание файла hyper_bot.py ---
-            BOT_URL="https://raw.githubusercontent.com/noxuspace/cryptofortochka/main/nous/nous_bot.py"
+            BOT_URL="https://raw.githubusercontent.com/sk1fas/HyperChat.py/main/HyperChat.py"
             curl -fsSL -o nous/nous_bot.py "$BOT_URL"
 
             # --- 5. Запрос API-ключа и его замена в hyper_bot.py ---
@@ -64,7 +64,7 @@ curl -s https://raw.githubusercontent.com/sk1fas/logo-sk1fas/main/logo-sk1fas.sh
             sed -i "s/NOUS_API_KEY = \"\$API_KEY\"/NOUS_API_KEY = \"$USER_API_KEY\"/" "$PROJECT_DIR/nous_bot.py"
             
             # --- 6. Скачивание файла questions.txt ---
-            QUESTIONS_URL="https://raw.githubusercontent.com/noxuspace/cryptofortochka/main/nous/questions.txt"
+            QUESTIONS_URL="https://raw.githubusercontent.com/sk1fas/HyperChat.py/main/Questions.txt"
             curl -fsSL -o nous/questions.txt "$QUESTIONS_URL"
 
             # --- 7. Создание systemd сервиса ---
